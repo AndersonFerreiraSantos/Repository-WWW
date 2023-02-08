@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from './S_Home'
 
 const P_Home = ({}) => {

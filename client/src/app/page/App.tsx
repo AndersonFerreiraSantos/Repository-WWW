@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import './S_App.css'
+import { Body } from './S_App.js'
+import './reset.css'
 
 //pages
 import P_TestOfComponents from '../../pages/test/P_TestOfComponents'
@@ -11,12 +12,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <P_Header /> */}
-        <Routes>
-          <Route path='/' element={<P_TestOfComponents />} />
-          <Route path='/home' element={<P_Home />} />
-        </Routes>
-        {/* <P_Footer /> */}
+        <P_Header />
+        <Body>
+          <Routes>
+            <Route path='/test' element={<P_TestOfComponents />} />
+            <Route path='/home' element={<P_Home />} />
+          </Routes>
+        </Body>
+        <P_Footer />
       </BrowserRouter>
     </>
   );

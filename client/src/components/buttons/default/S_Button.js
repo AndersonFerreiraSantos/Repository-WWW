@@ -6,5 +6,5 @@ export const Container = styled.button`
     color: ${THEME[THEME.TYPE_THEME].S_COMPONENT.color};
     width: 120px;
     height: 30px;
-    border-radius: 2px
+    border-radius: 2px;
 `

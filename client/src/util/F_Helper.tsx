@@ -5,6 +5,3 @@ export const route = (path: string, to: string) => {
         <Route path={path} element={to} />
     )
 }
-
-
-

@@ -2,7 +2,7 @@
 import { Container } from './S_Button'
 
 interface props {
-    name: string | number,
+    name: any,
     onClick?: Function,
     onDoubleClick?: Function,
 }

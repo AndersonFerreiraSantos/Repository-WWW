@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from './S_Footer'
 
 const P_Footer = ({}) => {

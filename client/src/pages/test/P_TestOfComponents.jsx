@@ -1,16 +1,16 @@
-import React from 'react';
-import {Container} from './S_TestOfComponents'
-import { useTranslation } from 'react-i18next'
+import {Container} from './S_TestOfComponents';
+import { useTranslation } from "react-i18next";
+
 //components
 import C_Button from '../../components/buttons/default/C_Button';
 
 const P_TestOfComponents = () => {
 
-    const { t } = useTranslation();
-
+    const  { t } = useTranslation();
+    
     return (
         <Container>
-            <C_Button name={t('test')} onDoubleClick={()=> console.log('teste tamanho da escrita')}/>
+            <C_Button name={t('home')} onDoubleClick={()=> console.log('teste tamanho da escrita')}/>
         </Container>
     );
 }

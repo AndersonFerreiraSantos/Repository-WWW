@@ -1,5 +1,5 @@
-import { initializeApp} from 'firebase/app'
-import { browserLocalPersistence, getAuth} from 'firebase/auth'
+import { initializeApp } from 'firebase/app';
+import { browserLocalPersistence, getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore'
 
 const firebase = {
@@ -12,11 +12,11 @@ const firebase = {
   measurementId: "G-G3LZRPHNPZ"
 }
 
-const app = initializeApp(firebase)
+const app = initializeApp(firebase);
 
-const auth = getAuth(app, { persistence: browserLocalPersistence })
+const auth = getAuth(app, { persistence: browserLocalPersistence });
 
-const databaseApp = getFirestore(app)
+const databaseApp = getFirestore(app);
 
 export {
   auth,

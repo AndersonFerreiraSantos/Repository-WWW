@@ -1,6 +1,8 @@
 {
     "translation":{
         "test":"teste",
-        "home":"casa"
+        "home":"casa",
+        "login":"conectar",
+        "register":"registrar"
     }
 }

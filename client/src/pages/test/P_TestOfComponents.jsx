@@ -1,6 +1,6 @@
 import {Container} from './S_TestOfComponents';
 import { useTranslation } from "react-i18next";
-
+import React, { memo } from 'react';
 //components
 import C_Button from '../../components/buttons/default/C_Button';
 
@@ -15,4 +15,4 @@ const P_TestOfComponents = () => {
     );
 }
 
-export default P_TestOfComponents
+export default memo(P_TestOfComponents)

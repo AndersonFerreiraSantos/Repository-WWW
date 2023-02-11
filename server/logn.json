@@ -1,0 +1,52 @@
+{
+    "user": {
+        "uid": "3X9nKUmexIUX4RyM5KvtFXijari2",
+        "email": "developersanter@gmail.com",
+        "emailVerified": true,
+        "displayName": "Anderson Ferreira Santos",
+        "isAnonymous": false,
+        "photoURL": "https://lh3.googleusercontent.com/a/AEdFTp5wKsU8LhLk__Y4kYvKhGrgJ0RzwBxTbRwTXvQC=s96-c",
+        "providerData": [
+            {
+                "providerId": "google.com",
+                "uid": "104501894677855587450",
+                "displayName": "Anderson Ferreira Santos",
+                "email": "developersanter@gmail.com",
+                "phoneNumber": null,
+                "photoURL": "https://lh3.googleusercontent.com/a/AEdFTp5wKsU8LhLk__Y4kYvKhGrgJ0RzwBxTbRwTXvQC=s96-c"
+            }
+        ],
+        "stsTokenManager": {
+            "refreshToken": "APJWN8c1Qln3ofozAZavqk-zJECNEqHuZTHxrKwnV9rI2qtMTwk3JP-IQVeyNR4JxTSGw8vsWYB5MJFaN03i41blqs-F37Uv8bsqUYlizdLeoToDXYA-8utAkyyEOmhmEPBGam91pGkHqfOQBHNjgU9DUrphVrhHvwyVPTcbosxhB_D2Xa8JIacmztFMgDwULYm0vi2BlgUP2O0cJVse15P12WhhvXCSE_vp1ATwTiTpDUVegifYK2Ei4kPixpzmUn2encJRTBCUEKQnOfknwEEabBe9kt-43Wa__PtVpfZ2f7vnfn3hWiANkAgHI0FKA0d5VfijK9YD9v478NdoFDTH0wJebZQzKyX0DPMlLMP1nV6y50ete1QW1P8tO6U2U3CCHE5inecRWvyHT4lc9ZUVRRnI1SOzDSvjLQG8ltDloLVfIxwuYBgCZ5a1w5WsTeyqUaZbvbc6",
+            "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlYjMxMjdiMjRjZTg2MDJjODEyNDUxZThmZTczZDU4MjkyMDg4N2MiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQW5kZXJzb24gRmVycmVpcmEgU2FudG9zIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDV3S3NVOExoTGtfX1k0a1l2S2hHcmdKMFJ6d0J4VGJSd1RYdlFDPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2RydXluYS02MjYyYiIsImF1ZCI6ImRydXluYS02MjYyYiIsImF1dGhfdGltZSI6MTY3NjA3Mzk2NCwidXNlcl9pZCI6IjNYOW5LVW1leElVWDRSeU01S3Z0RlhpamFyaTIiLCJzdWIiOiIzWDluS1VtZXhJVVg0UnlNNUt2dEZYaWphcmkyIiwiaWF0IjoxNjc2MDczOTY0LCJleHAiOjE2NzYwNzc1NjQsImVtYWlsIjoiZGV2ZWxvcGVyc2FudGVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTA0NTAxODk0Njc3ODU1NTg3NDUwIl0sImVtYWlsIjpbImRldmVsb3BlcnNhbnRlckBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.XLBALluU2XlhyKP_DliG9ZucBSISBzDKP9tv2wR4lpw4HLHUxFX9aqItbX-LtmhzuA-LKlSt-VjeYjYbUNNWef6FImNnIZLan6Pkoz6_pirFVKFKIg6q-JyOzecxQLgqSwG6am1rFXTp7t3VKajbzw2bF02HV_W798bgC2_knUMoqL4mp7nqPKWxuETp388LuQ0CgUwVrWUWWz0QdZsqL0YtWNxTnHKy5xVm-Ein_pYthm2VlmwuQvHVjj26ITYoZW5ypnxltzuQKC-l8AaK4PQXHXSSbH5lvcieHME0jCbYL6m8X0J5GJ15n1FbVJeyl5WKiGQFaGqrUYMUEhWA6A",
+            "expirationTime": 1676077564535
+        },
+        "createdAt": "1671581167532",
+        "lastLoginAt": "1676073964523",
+        "apiKey": "AIzaSyBQrmup8KRcDEtsnuHt4kCU7nmnn9zNWKI",
+        "appName": "[DEFAULT]"
+    },
+    "providerId": "google.com",
+    "_tokenResponse": {
+        "federatedId": "https://accounts.google.com/104501894677855587450",
+        "providerId": "google.com",
+        "email": "developersanter@gmail.com",
+        "emailVerified": true,
+        "firstName": "Anderson",
+        "fullName": "Anderson Ferreira Santos",
+        "lastName": "Ferreira Santos",
+        "photoUrl": "https://lh3.googleusercontent.com/a/AEdFTp5wKsU8LhLk__Y4kYvKhGrgJ0RzwBxTbRwTXvQC=s96-c",
+        "localId": "3X9nKUmexIUX4RyM5KvtFXijari2",
+        "displayName": "Anderson Ferreira Santos",
+        "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlYjMxMjdiMjRjZTg2MDJjODEyNDUxZThmZTczZDU4MjkyMDg4N2MiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQW5kZXJzb24gRmVycmVpcmEgU2FudG9zIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDV3S3NVOExoTGtfX1k0a1l2S2hHcmdKMFJ6d0J4VGJSd1RYdlFDPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2RydXluYS02MjYyYiIsImF1ZCI6ImRydXluYS02MjYyYiIsImF1dGhfdGltZSI6MTY3NjA3Mzk2NCwidXNlcl9pZCI6IjNYOW5LVW1leElVWDRSeU01S3Z0RlhpamFyaTIiLCJzdWIiOiIzWDluS1VtZXhJVVg0UnlNNUt2dEZYaWphcmkyIiwiaWF0IjoxNjc2MDczOTY0LCJleHAiOjE2NzYwNzc1NjQsImVtYWlsIjoiZGV2ZWxvcGVyc2FudGVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTA0NTAxODk0Njc3ODU1NTg3NDUwIl0sImVtYWlsIjpbImRldmVsb3BlcnNhbnRlckBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.XLBALluU2XlhyKP_DliG9ZucBSISBzDKP9tv2wR4lpw4HLHUxFX9aqItbX-LtmhzuA-LKlSt-VjeYjYbUNNWef6FImNnIZLan6Pkoz6_pirFVKFKIg6q-JyOzecxQLgqSwG6am1rFXTp7t3VKajbzw2bF02HV_W798bgC2_knUMoqL4mp7nqPKWxuETp388LuQ0CgUwVrWUWWz0QdZsqL0YtWNxTnHKy5xVm-Ein_pYthm2VlmwuQvHVjj26ITYoZW5ypnxltzuQKC-l8AaK4PQXHXSSbH5lvcieHME0jCbYL6m8X0J5GJ15n1FbVJeyl5WKiGQFaGqrUYMUEhWA6A",
+        "context": "",
+        "oauthAccessToken": "ya29.a0AVvZVspikkp6Se0vJNqjdgCjFJNKef8X-PlY83-XuReC0-CdpuGC4RIja_CXFBvQ2zuvZq7Ogso9CL_gPLnlZ3D07caxS2Agz-NMQUmPrHFRqtu0_Hdv4T-zfxG0JmGhO27qTGQql1OLzRqKQuXWZNTbhhaUSkEaCgYKAUkSARASFQGbdwaI6gGsPCPA5oBCx1k7Gz2yjw0166",
+        "oauthExpireIn": 3599,
+        "refreshToken": "APJWN8c1Qln3ofozAZavqk-zJECNEqHuZTHxrKwnV9rI2qtMTwk3JP-IQVeyNR4JxTSGw8vsWYB5MJFaN03i41blqs-F37Uv8bsqUYlizdLeoToDXYA-8utAkyyEOmhmEPBGam91pGkHqfOQBHNjgU9DUrphVrhHvwyVPTcbosxhB_D2Xa8JIacmztFMgDwULYm0vi2BlgUP2O0cJVse15P12WhhvXCSE_vp1ATwTiTpDUVegifYK2Ei4kPixpzmUn2encJRTBCUEKQnOfknwEEabBe9kt-43Wa__PtVpfZ2f7vnfn3hWiANkAgHI0FKA0d5VfijK9YD9v478NdoFDTH0wJebZQzKyX0DPMlLMP1nV6y50ete1QW1P8tO6U2U3CCHE5inecRWvyHT4lc9ZUVRRnI1SOzDSvjLQG8ltDloLVfIxwuYBgCZ5a1w5WsTeyqUaZbvbc6",
+        "expiresIn": "3600",
+        "oauthIdToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImI0OWM1MDYyZDg5MGY1Y2U0NDllODkwYzg4ZThkZDk4YzRmZWUwYWIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiOTMwNzI1MDkxNDg0LXJ1anVwN3B0anZsODRvNW1mbTh2dTE4aGM4b2pyODZkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiOTMwNzI1MDkxNDg0LXJ1anVwN3B0anZsODRvNW1mbTh2dTE4aGM4b2pyODZkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA0NTAxODk0Njc3ODU1NTg3NDUwIiwiZW1haWwiOiJkZXZlbG9wZXJzYW50ZXJAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJrc191S3ZURjlZNFE3bnhLb2VhMGNRIiwiaWF0IjoxNjc2MDczOTY0LCJleHAiOjE2NzYwNzc1NjR9.wfyYSLMnncgpnfP-dbDFDOZT47rneuXA6hiqRSaqaQzNL2uldBOtCI9eFmuI7JQEjENt9LYuCHAUDVKtGfYYLrN3x2qvQUXbIAwfVKvXjWEk0eSOelJZKwrJq6J1jhTWkLKNkIXUtxSvHpeA8yXXAVUYiOZcjQ2w-LQwad5F-E19ZyhY6roxnrl181iHxZd02L4ankjTp1KtJVtWpPaGQBOOxgOrCn_G06xGk4QopgGp2gZrEjUERxiOi3CXN9YhaUx5hZ6rLpspugsPXd-kNq1E1BfZDXsO_5tpfVkYtHNSsasx5duObUQM5NUy0hD5u08Z89kZ1W16X49DCGEtAA",
+        "rawUserInfo": "{\"name\":\"Anderson Ferreira Santos\",\"granted_scopes\":\"https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid\",\"id\":\"104501894677855587450\",\"verified_email\":true,\"given_name\":\"Anderson\",\"locale\":\"pt-BR\",\"family_name\":\"Ferreira Santos\",\"email\":\"developersanter@gmail.com\",\"picture\":\"https://lh3.googleusercontent.com/a/AEdFTp5wKsU8LhLk__Y4kYvKhGrgJ0RzwBxTbRwTXvQC=s96-c\"}",
+        "kind": "identitytoolkit#VerifyAssertionResponse"
+    },
+    "operationType": "signIn"
+}

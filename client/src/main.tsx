@@ -5,5 +5,7 @@ import "./i18n/translation"
 console.log('teste')
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-    <App />
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 )

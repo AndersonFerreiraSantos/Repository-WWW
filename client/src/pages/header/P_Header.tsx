@@ -1,29 +1,46 @@
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
-import { useTranslation } from "react-i18next";
+import React, { useMemo, useContext } from 'react';
 import { auth } from '../../database/firebase';
-import C_Button from '../../components/buttons/default/C_Button'
+import { useTranslation } from "react-i18next";
+
 import { Container, Left, Right } from './S_Header'
-import React, { useMemo } from 'react';
-const P_Header = ({ }) => {
-    console.log('header')
+import { BUTTONS } from './M_Header';
+import { contextUser } from '../../util/Contexts';
+
+import C_Button from '../../components/buttons/default/C_Button'
+import C_Button_Icon from '../../components/buttons/icon/C_Button_Icon'
+
+const P_Header = ({}) => {
+
     const { t } = useTranslation();
 
-    const googleLogin = () => {
-        const provider = new GoogleAuthProvider();
-        signInWithPopup(auth, provider).then(response => console.log(response))
-    }
+    const { user, setUser } = useContext(contextUser);
+
+
 
     return (
-
         <Container>
-            <Left>
-                <C_Button onClick={() => console.log('B1')} name={'button 1'} />
-                <C_Button onClick={() => console.log('B2')} name={'button 2'} />
-                <C_Button onClick={() => console.log('B3')} name={'button 3'} />
-            </Left>
+            <Left >
+                {!user?
+                    BUTTONS.OF_LEFT.map(button => {
+                        return (
+                            <C_Button name={button.name} onClick={button.onClick} />
+                        )
+                    })
+                :
+                <><h1>{user.displayName}</h1> <img src={user.photoURL} /></> }
+                </Left>
             <Right>
-                <C_Button onClick={() => googleLogin()} name={t('login')} />
-                <C_Button onClick={() => console.log('B3')} name={t('register')} />
+            {!user?
+                    BUTTONS.OF_RIGHT.map(button => {
+                        return (
+                            <C_Button name={button.name} onClick={button.onClick} />
+                        )
+                    })
+                :
+                <C_Button_Icon />}
+                 {/* <><h1>{user.displayName}</h1> <img src={user.photoURL} /></> } */}
+                
             </Right>
         </Container>
     )

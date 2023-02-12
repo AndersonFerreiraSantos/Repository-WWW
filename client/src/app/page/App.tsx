@@ -17,45 +17,47 @@ import P_Home from '../../pages/home/P_Home.js';
 import C_Loading_Full from '../../components/util/loading/C_Loading_Full.jsx'
 
 const App = () => {
-  const [isLoadingLoggerUser, setIsLoadingLoggerUser] = useState(true)
 
+  const [isLoadingLoggerUser, setIsLoadingLoggerUser] = useState(true)
+  const [logged, setLogged] = useState(false);
   const [user, setUser] = useState({});
 
-  useEffect(() => {
-    setIsLoadingLoggerUser(true)
 
+  useEffect(() => {
+    setLogged(false)
     AuthService.getLoggerUser().then((user) => {
-      setIsLoadingLoggerUser(false)
-      setUser(user)
+      setIsLoadingLoggerUser(false);
+      setUser(user);
+      user ? setLogged(true) : setLogged(false);
     }).catch(() => {
-      setIsLoadingLoggerUser(false)
+      setIsLoadingLoggerUser(false);
+      user ? setLogged(true) : setLogged(false);
     }).catch(() => {
-      setIsLoadingLoggerUser(false)
+      setIsLoadingLoggerUser(false);
+      user ? setLogged(true) : setLogged(false);
     })
-  }, [])
+  }, []);
   return (
-    <>
+    <body>
       <DndProvider backend={HTML5Backend} >
         <div>
           {!isLoadingLoggerUser &&
-            <contextUser.Provider value={{ user, setUser }}>
+            <contextUser.Provider value={{ logged, user, setUser }}>
               <BrowserRouter>
+                <P_Header />
                 <Body>
-                  <P_Header/>
                   <Routes>
-                    <Route path='/home' element={!user ? <P_Home /> : <Navigate to={'/test'}/> } />
-                    <Route path='/test' element={user ? <P_TestOfComponents/> : <Navigate to={'/home'}/> } />
+                    <Route path='/home' element={!user ? <P_Home /> : <Navigate to={'/test'} />} />
+                    <Route path='/test' element={user ? <P_TestOfComponents /> : <Navigate to={'/home'} />} />
                   </Routes>
                 </Body>
                 <P_Footer />
               </BrowserRouter>
             </contextUser.Provider>}
-      
-
         </div>
         {isLoadingLoggerUser && <C_Loading_Full />}
       </DndProvider>
-    </>
+    </body>
   );
 }
 

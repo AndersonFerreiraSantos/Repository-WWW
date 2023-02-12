@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+
 import React, { useMemo, useContext } from 'react';
 import { auth } from '../../database/firebase';
 import { useTranslation } from "react-i18next";
@@ -9,38 +9,42 @@ import { contextUser } from '../../util/Contexts';
 
 import C_Button from '../../components/buttons/default/C_Button'
 import C_Button_Icon from '../../components/buttons/icon/C_Button_Icon'
+import C_Menu_Config from '../../components/menus/config/C_Menu_Config';
 
-const P_Header = ({}) => {
+const P_Header = ({ }) => {
 
     const { t } = useTranslation();
 
-    const { user, setUser } = useContext(contextUser);
+    const teste =() => {
+        return(
+           <></>
+        )
+    }
 
-
-
+    const { user, logged } = useContext(contextUser);
     return (
         <Container>
-            <Left >
-                {!user?
-                    BUTTONS.OF_LEFT.map(button => {
+             <C_Menu_Config />
+            <Left logged={logged} >
+                {!logged ?
+                    BUTTONS.OF_LEFT.map((button, key) => {
                         return (
                             <C_Button name={button.name} onClick={button.onClick} />
                         )
                     })
-                :
-                <><h1>{user.displayName}</h1> <img src={user.photoURL} /></> }
-                </Left>
-            <Right>
-            {!user?
-                    BUTTONS.OF_RIGHT.map(button => {
+                    :
+                    undefined}
+            </Left>
+            <Right logged={logged} >
+                {!logged ?
+                    BUTTONS.OF_RIGHT.map((button, key) => {
                         return (
-                            <C_Button name={button.name} onClick={button.onClick} />
+                            <C_Button  name={button.name} onClick={button.onClick} />
                         )
                     })
-                :
-                <C_Button_Icon />}
-                 {/* <><h1>{user.displayName}</h1> <img src={user.photoURL} /></> } */}
-                
+                    :
+                    <C_Button_Icon style={{ marginRight: '10px'}} image={user.photoURL} onClick={() => teste()} />
+                }
             </Right>
         </Container>
     )

@@ -6,7 +6,7 @@ export const Container = styled.header`
     display: flex;
     width: 100%;
     height: 5%;
-    top:0
+    top:0;
 `
 export const Left = styled.div`
     justify-content: space-evenly;
@@ -15,7 +15,7 @@ export const Left = styled.div`
     align-items: center;
     position: relative;
     display: flex;
-    width: 70%;
+    width: ${(props) => props.logged ?  '95%' : '70%'};
 `
 export const Right = styled.div`
     justify-content: space-evenly;
@@ -24,7 +24,7 @@ export const Right = styled.div`
     align-items: center;
     position: relative;
     display: flex;
-    width: 30%;
+    width: ${(props) => props.logged ?  '5%' : '30%'};
 `
 
 export const GoogleWindow = styled.div`

@@ -11,7 +11,7 @@ import './reset.css';
 import P_TestOfComponents from '../../pages/test/P_TestOfComponents.jsx';
 import P_Footer from '../../pages/footer/P_Footer';
 import P_Header from '../../pages/header/P_Header';
-import P_Home from '../../pages/home/P_Home.js';
+import P_Home from '../../pages/home/P_Home.jsx';
 
 //components
 import C_Loading_Full from '../../components/util/loading/C_Loading_Full.jsx'
@@ -49,8 +49,6 @@ const App = () => {
                   <Routes>
                     <Route path='/home' element={<P_Home />} />
                     <Route path='/test' element={ <P_TestOfComponents /> } />
-                    {/* <Route path='/home' element={!user ? <P_Home /> : <Navigate to={'/test'} />} />
-                    <Route path='/test' element={user ? <P_TestOfComponents /> : <Navigate to={'/home'} />} /> */}
                   </Routes>
                 </Body>
                 <P_Footer />

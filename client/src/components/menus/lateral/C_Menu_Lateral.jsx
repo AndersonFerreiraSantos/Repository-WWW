@@ -1,9 +1,9 @@
-import React from "react";
-import { Container, Itens, Item } from "./S_Menu_Config";
-import { C_Icon } from "../../icon/C_Icon";
+import { Container, Itens, Item } from "./S_Menu_Lateral";
 import { useTranslation } from "react-i18next";
+import { C_Icon } from "../../icon/C_Icon";
+import React from "react";
 
-const C_Menu_Config = ({show, items}) => {
+const C_Menu_Lateral = ({show, items}) => {
     const { t } = useTranslation();
     return (
         <Container show={show}>
@@ -18,4 +18,4 @@ const C_Menu_Config = ({show, items}) => {
     )
 }
 
-export default C_Menu_Config;
+export default C_Menu_Lateral;

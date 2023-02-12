@@ -4,28 +4,35 @@ export const Container = styled.header`
     background-color: yellow;
     position: fixed;
     display: flex;
+    z-index: 10;
     width: 100%;
     height: 5%;
     top:0;
-    z-index: 10;
+    
 `
 export const Left = styled.div`
-    justify-content: space-evenly;
+    justify-content: 'space-evenly';
     background-color: green;
-    flex-direction: row;
     align-items: center;
-    position: relative;
+    transition: 1s;
     display: flex;
-    width: ${(props) => props.logged ?  '95%' : '70%'};
+    width: ${(props) => { if(props.logged && props.show){return '75%'}else if(props.logged){return '90%'}else{'70%'} }};
 `
 export const Right = styled.div`
-    justify-content: space-evenly;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: ${(props) => props.logged ? '5%' : '30%'};
+`
+export const Menu = styled.div`
+    justify-content: ${ (props) => { if(props.logged && props.show){return 'end'}else if(props.logged){return 'space-evenly'}}};
+    width: ${(props) => { if(props.logged && props.show){return '20%'}else if(props.logged){return '5%'} }};
     background-color: orange;
     flex-direction: row;
     align-items: center;
-    position: relative;
+    transition: 1s;
     display: flex;
-    width: ${(props) => props.logged ?  '5%' : '30%'};
 `
 
 export const GoogleWindow = styled.div`
@@ -37,5 +44,5 @@ export const GoogleWindow = styled.div`
 `
 
 export const Config = styled.div`
-    
+
 `

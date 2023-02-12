@@ -1,6 +1,8 @@
 import { initializeApp } from 'firebase/app';
 import { browserLocalPersistence, getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore'
+import { getFirestore } from 'firebase/firestore';
+
+console.log(process.env.NODE_ENV)
 
 const firebase = {
   apiKey: "AIzaSyBQrmup8KRcDEtsnuHt4kCU7nmnn9zNWKI",
@@ -10,12 +12,10 @@ const firebase = {
   messagingSenderId: "930725091484",
   appId: "1:930725091484:web:e38d42dff90cf8de0af559",
   measurementId: "G-G3LZRPHNPZ"
-}
+};
 
 const app = initializeApp(firebase);
-
 const auth = getAuth(app, { persistence: browserLocalPersistence });
-
 const databaseApp = getFirestore(app);
 
 export {

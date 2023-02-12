@@ -3,13 +3,14 @@ import styled from 'styled-components'
 export const Container = styled.div`
     background-color: black;
     position: fixed;
+    transition: 1s;
     color: white;
-    height: auto;
-    width: auto;
+    height: 92%;
+    width: 20%;
     z-index: 5;
-    right: 0;
+    left:${(props) => props.show ? 0 : '-20%'};
     top: 5%;
-    display:${(props) => props.show ? undefined : 'none'};
+    /* display:${(props) => props.show ? undefined : 'none'}; */
 `
 
 export const Itens = styled.ul`

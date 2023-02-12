@@ -7,6 +7,7 @@ export const Container = styled.header`
     width: 100%;
     height: 5%;
     top:0;
+    z-index: 10;
 `
 export const Left = styled.div`
     justify-content: space-evenly;
@@ -33,4 +34,8 @@ export const GoogleWindow = styled.div`
     height: 500px;
     margin-left: auto;
     margin-right: auto;
+`
+
+export const Config = styled.div`
+    
 `

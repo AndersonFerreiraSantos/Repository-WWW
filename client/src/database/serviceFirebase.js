@@ -1,5 +1,7 @@
 import * as firebaseAuth from 'firebase/auth'
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { useNavigate } from "react-router-dom"
+
 
 import { auth } from './firebase'
 
@@ -11,18 +13,15 @@ const getLoggerUser = async () => {
     });
 }
 
-const googleAuthentication = () => {
+const googleAuthentication = async () => {
     const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider);
+    await signInWithPopup(auth, provider);
+    window.location.reload();
 }
 
-const logout = async (navigate) => {
-    return new Promise((resolve) => {
-        firebaseAuth.signOut(auth)
-        navigate('/')
-        window.location.reload();
-        resolve();
-    });
+const logout = async () => {
+    firebaseAuth.signOut(auth)
+    window.location.reload();
 }
 
 const method = {

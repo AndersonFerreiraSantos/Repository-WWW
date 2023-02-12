@@ -9,5 +9,4 @@ export const Image = styled.img`
     border-radius: 50%;
     border-width: 2px;
     width: 30px;
-
 `

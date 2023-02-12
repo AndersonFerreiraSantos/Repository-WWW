@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import React, { useState, useEffect, memo, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import AuthService from '../../database/serviceFirebase.js'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { contextUser } from '../../util/Contexts.js';
@@ -47,8 +47,10 @@ const App = () => {
                 <P_Header />
                 <Body>
                   <Routes>
-                    <Route path='/home' element={!user ? <P_Home /> : <Navigate to={'/test'} />} />
-                    <Route path='/test' element={user ? <P_TestOfComponents /> : <Navigate to={'/home'} />} />
+                    <Route path='/home' element={<P_Home />} />
+                    <Route path='/test' element={ <P_TestOfComponents /> } />
+                    {/* <Route path='/home' element={!user ? <P_Home /> : <Navigate to={'/test'} />} />
+                    <Route path='/test' element={user ? <P_TestOfComponents /> : <Navigate to={'/home'} />} /> */}
                   </Routes>
                 </Body>
                 <P_Footer />

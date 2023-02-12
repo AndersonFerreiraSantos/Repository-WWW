@@ -2,7 +2,9 @@
     "translation":{
         "test":"teste",
         "home":"casa",
+
         "login":"conectar",
-        "register":"registrar"
+        "register":"registrar",
+        "logout":"sair"
     }
 }

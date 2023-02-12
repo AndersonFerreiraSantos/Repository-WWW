@@ -1,4 +1,5 @@
-import googleAuthentication from '../../database/serviceFirebase'
+import googleAuthentication from '../../database/serviceFirebase';
+
 
 export const BUTTONS = {
     OF_LEFT:[
@@ -8,5 +9,13 @@ export const BUTTONS = {
     ],
     OF_RIGHT:[
         {name: 'GOOGLE', onClick:() => {googleAuthentication.googleAuthentication()}},
+    ],
+    ON_LEFT:[
+    ],
+    ON_RIGHT:[
     ]
 }
+
+export const CONFIG_LIST = [
+    { text: 'logout', onClick:() => {googleAuthentication.logout()}, icon:'exit_to_app' },
+]

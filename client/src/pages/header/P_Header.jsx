@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 import { Container, Left, Right, Config, Menu } from './S_Header';
-import { BUTTONS, CONFIG_LIST } from './M_Header';
+import { BUTTONS, CONFIG_LIST, MENU_LIST } from './M_Header';
 import { contextUser } from '../../util/Contexts';
 
 import C_Button_Icon from '../../components/buttons/icon/C_Button_Icon';
@@ -19,12 +19,13 @@ const P_Header = ({}) => {
     const [showMenuLateral, setShowMenuLateral] = useState(false);
     const { user, logged } = useContext(contextUser);
     const { t } = useTranslation();
-
+    
     return (
         <Container>
+            {logged ?
             <Menu logged={logged} show={showMenuLateral} >
-                <C_Button_Icon image={user.photoURL} onClick={() => setShowMenuLateral( showMenuLateral === false ? true : false )} />
-            </Menu>
+                <C_Button_Icon show={showMenuLateral} icon={'FiChevronRight'} onClick={() => setShowMenuLateral( showMenuLateral === false ? true : false )} />
+            </Menu> : undefined }
             <Left logged={logged} show={showMenuLateral} >
                 {!logged ?
                     BUTTONS.OF_LEFT.map((button, key) => {
@@ -48,7 +49,7 @@ const P_Header = ({}) => {
                 }
             </Right>
             <C_Menu_Config show={showConfig} items={CONFIG_LIST} />
-            <C_Menu_Lateral show={showMenuLateral} items={CONFIG_LIST} />
+            <C_Menu_Lateral show={showMenuLateral} items={MENU_LIST} />
         </Container>
     )
 }

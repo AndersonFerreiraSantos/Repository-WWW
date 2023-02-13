@@ -10,7 +10,7 @@ const C_Menu_Lateral = ({show, items}) => {
             <Itens>
                 {
                     items?.map((item, key) => {
-                        return <Item key={key} onClick={item.onClick} >{t(item.text)}<C_Icon icon={item.icon} /></Item>
+                        return <Item key={key} onClick={item.onClick} >{t(item.text)}<C_Icon icon={item.icon}/></Item>
                     })
                 }
             </Itens>

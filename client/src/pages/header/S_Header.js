@@ -10,13 +10,23 @@ export const Container = styled.header`
     top:0;
     
 `
-export const Left = styled.div`
-    justify-content: 'space-evenly';
-    background-color: green;
+
+export const Menu = styled.div`
+    justify-content:end;
+    width: ${(props) => { if(props.logged && props.show){return '180px'}else if(props.logged){return '30px'} }};
+    background-color: orange;
+    flex-direction: row;
     align-items: center;
     transition: 1s;
     display: flex;
-    width: ${(props) => { if(props.logged && props.show){return '75%'}else if(props.logged){return '90%'}else{'70%'} }};
+`
+
+export const Left = styled.div`
+    justify-content: space-around;
+    background-color: green;
+    align-items: center;
+    transition: 1s;
+    width: ${(props) => { if(props.logged && props.show){return '100%'}else if(props.logged){return '100%'}else{return '70%'} }};
 `
 export const Right = styled.div`
     background-color: orange;
@@ -24,15 +34,6 @@ export const Right = styled.div`
     align-items: center;
     display: flex;
     width: ${(props) => props.logged ? '5%' : '30%'};
-`
-export const Menu = styled.div`
-    justify-content: ${ (props) => { if(props.logged && props.show){return 'end'}else if(props.logged){return 'space-evenly'}}};
-    width: ${(props) => { if(props.logged && props.show){return '20%'}else if(props.logged){return '5%'} }};
-    background-color: orange;
-    flex-direction: row;
-    align-items: center;
-    transition: 1s;
-    display: flex;
 `
 
 export const GoogleWindow = styled.div`

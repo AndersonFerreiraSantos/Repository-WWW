@@ -1,7 +1,14 @@
+import { FiChevronRight, FiX } from "react-icons/fi";
 import {Icon} from './S_Icon'
 
 export const C_Icon = ({icon}) => {
+
+    const ICONS = {
+        FiChevronRight: <FiChevronRight />,
+        FiX: <FiX />
+    }
+
     return(
-        <Icon className="material-icons" > {icon} </Icon>
+        <Icon > {ICONS[icon]} </Icon>
     )
 }

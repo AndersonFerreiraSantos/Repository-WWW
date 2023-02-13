@@ -17,5 +17,17 @@ export const BUTTONS = {
 }
 
 export const CONFIG_LIST = [
-    { text: 'logout', onClick:() => {googleAuthentication.logout()}, icon:'exit_to_app' },
+    { text: 'logout', onClick:() => {googleAuthentication.logout()}, icon:'FiX' },
+]
+
+export const MENU_LIST = [
+    { text: 'logout', onClick:() => {console.log('teste')}, icon:'FiX' },
+    { text: 'logout', onClick:() => {console.log('teste1')}, icon:'FiX' },
+    { text: 'logout', onClick:() => {console.log('teste2')}, icon:'FiX' },
+    { text: 'logout', onClick:() => {console.log('teste3')}, icon:'FiX' },
+    { text: 'logout', onClick:() => {console.log('teste4')}, icon:'FiX' },
+    { text: 'logout', onClick:() => {console.log('teste5')}, icon:'FiX' },
+    { text: 'logout', onClick:() => {console.log('teste6')}, icon:'FiX' },
+    { text: 'logout', onClick:() => {console.log('teste7')}, icon:'FiX' },
+
 ]

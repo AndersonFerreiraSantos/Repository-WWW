@@ -1,12 +1,11 @@
 
 import React, { useMemo, useContext, useState } from 'react';
 import { auth } from '../../database/firebase';
-import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-import { Container, Left, Right, Config, Menu } from './S_Header';
+import { Container, Left, Right, Config, Menu, Mid } from './S_Header';
 import { BUTTONS, CONFIG_LIST, MENU_LIST } from './M_Header';
-import { contextUser } from '../../util/Contexts';
+import { contextUser, contextConfig } from '../../util/Contexts';
 
 import C_Button_Icon from '../../components/buttons/icon/C_Button_Icon';
 import C_Menu_Config from '../../components/menus/config/C_Menu_Config';
@@ -18,7 +17,7 @@ const P_Header = ({}) => {
     const [showConfig, setShowConfig] = useState(false);
     const [showMenuLateral, setShowMenuLateral] = useState(false);
     const { user, logged } = useContext(contextUser);
-    const { t } = useTranslation();
+    const { globalConfig, setGlobalConfig } = useContext(contextUser);
     
     return (
         <Container>
@@ -26,8 +25,8 @@ const P_Header = ({}) => {
             <Menu logged={logged} show={showMenuLateral} >
                 <C_Button_Icon show={showMenuLateral} icon={'FiChevronRight'} onClick={() => setShowMenuLateral( showMenuLateral === false ? true : false )} />
             </Menu> : undefined }
-            <Left logged={logged} show={showMenuLateral} >
-                {!logged ?
+            {/* <Left logged={logged} show={showMenuLateral} > */}
+                {/* {!logged ?
                     BUTTONS.OF_LEFT.map((button, key) => {
                         console.log(key)
                         return (
@@ -35,8 +34,18 @@ const P_Header = ({}) => {
                         )
                     })
                     :
-                    undefined}
-            </Left>
+                    undefined} */}
+            {/* </Left> */}
+            <Mid>
+                <C_Button key={1} name={'aaa'} />
+                <C_Button key={1} name={'aaa'} />
+                <C_Button key={1} name={'aaa'} />
+                <C_Button key={1} name={'aaa'} />
+                <C_Button key={1} name={'aaa'} />
+                <C_Button key={1} name={'aaa'} />
+                <C_Button key={1} name={'aaa'} />
+                <C_Button key={1} name={'aaa'} />
+            </Mid>
             <Right logged={logged} >
                 {!logged ?
                     BUTTONS.OF_RIGHT.map((button, key) => {

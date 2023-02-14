@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import AuthService from '../../database/serviceFirebase.js'
 import { HTML5Backend } from 'react-dnd-html5-backend'
-import { contextUser } from '../../util/Contexts.js';
+import { contextUser, contextConfig } from '../../util/Contexts.js';
 import { DndProvider } from 'react-dnd'
 import { Body } from './S_App.js';
 import './reset.css';
@@ -19,6 +19,7 @@ import C_Loading_Full from '../../components/util/loading/C_Loading_Full.jsx'
 const App = () => {
 
   const [isLoadingLoggerUser, setIsLoadingLoggerUser] = useState(true)
+  const [globalConfig, setGlobalConfig] = useState(true)
   const [logged, setLogged] = useState(false);
   const [user, setUser] = useState({});
 
@@ -43,21 +44,23 @@ const App = () => {
         <div>
           {!isLoadingLoggerUser &&
             <contextUser.Provider value={{ logged, user, setUser }}>
-              <BrowserRouter>
-                <P_Header />
-                <Body>
-                  <Routes>
-                    <Route path='/home' element={<P_Home />} />
-                    <Route path='/test' element={ <P_TestOfComponents /> } />
-                  </Routes>
-                </Body>
-                <P_Footer />
-              </BrowserRouter>
+              <contextConfig.Provider value={{ logged, globalConfig, setGlobalConfig }}>
+                <BrowserRouter>
+                  <P_Header />
+                  <Body>
+                    <Routes>
+                      <Route path='/home' element={<P_Home />} />
+                      <Route path='/test' element={<P_TestOfComponents />} />
+                    </Routes>
+                  </Body>
+                  <P_Footer />
+                </BrowserRouter>
+              </contextConfig.Provider>
             </contextUser.Provider>}
         </div>
         {isLoadingLoggerUser && <C_Loading_Full />}
       </DndProvider>
-    </body>
+    </body >
   );
 }
 

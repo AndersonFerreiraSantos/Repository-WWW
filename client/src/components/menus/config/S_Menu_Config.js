@@ -5,10 +5,10 @@ export const Container = styled.div`
     position: fixed;
     color: white;
     height: auto;
-    width: auto;
+    width: 150px;
     z-index: 5;
     right: 0;
-    top: 5%;
+    top: 40px;
     display:${(props) => props.show ? undefined : 'none'};
 `
 

@@ -3,14 +3,13 @@ import styled from 'styled-components'
 export const Container = styled.header`
     justify-content: space-between;
     background-color: yellow;
+    align-items: center;
     position: fixed;
     display: flex;
+    height: 40px;
     z-index: 10;
     width: 100%;
-    height: 5%;
     top:0;
-    align-items: center;
-
 `
 
 
@@ -47,10 +46,10 @@ export const Right = styled.div`
 
 export const GoogleWindow = styled.div`
     background-color: purple;
-    width: 500px;
-    height: 500px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    height: 500px;
+    width: 500px;
 `
 
 export const Config = styled.div`

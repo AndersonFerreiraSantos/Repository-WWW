@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const Body = styled.div`
+    left: ${(props) => props.showMenuLateral ? '180px' : 0};
     position: fixed;
-    width: 100%;
-    height: 92%;
+    transition: 1s;
     z-index: 1;
-    top: 5%;
+    top: 40px;
 `
+

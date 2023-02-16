@@ -11,6 +11,11 @@ export const BUTTONS = {
         {name: 'GOOGLE', onClick:() => {googleAuthentication.googleAuthentication()}},
     ],
     ON_LEFT:[
+        {name: 'ON AAAA', onClick:() => {console.log('b3')}},
+        {name: 'ON AAAA', onClick:() => {console.log('b3')}},
+        {name: 'ON AAAA', onClick:() => {console.log('b3')}},
+        {name: 'ON AAAA', onClick:() => {console.log('b3')}},
+        {name: 'ON AAAA', onClick:() => {console.log('b3')}}
     ],
     ON_RIGHT:[
     ]

@@ -3,13 +3,14 @@ import styled from 'styled-components'
 export const Container = styled.div`
     left:${(props) => props.show ? 0 : '-180px'};
     background-color: black;
+    display: block;
     position: fixed;
     transition: 1s;
     color: white;
-    height: 92%;
+    height: 100%;
     width: 180px;
     z-index: 5;
-    top: 5%;
+    top: 40px;
 `
 
 export const Itens = styled.div`

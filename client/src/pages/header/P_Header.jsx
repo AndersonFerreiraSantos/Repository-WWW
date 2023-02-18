@@ -12,7 +12,7 @@ import C_Button_Icon from '../../components/buttons/icon/C_Button_Icon';
 import C_Menu_Config from '../../components/menus/config/C_Menu_Config';
 import C_Button from '../../components/buttons/default/C_Button';
 
-const P_Header = ({ }) => {
+const P_Header = ({}) => {
 
     const { user, logged } = useContext(contextUser);
     const [showConfig, setShowConfig] = useState(false);

@@ -14,8 +14,7 @@ import R_Routes from '../routes/R_Routes.jsx'
 
 //components
 import C_Loading_Full from '../../components/util/loading/C_Loading_Full.jsx'
-import P_Home from '../../pages/home/P_Home.jsx';
-const App = () => {
+const App = ({}) => {
 
   const [isLoadingLoggerUser, setIsLoadingLoggerUser] = useState(true)
   const [globalConfig, setGlobalConfig] = useState(true)
